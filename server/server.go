@@ -848,7 +848,7 @@ func (j *jsonRPCHub) GetSyncProgression() *progress.Progression {
 
 // SETUP //
 
-// setupJSONRCP sets up the JSONRPC server, using the set configuration
+// setupJSONRPC sets up the JSONRPC server, using the set configuration
 func (s *Server) setupJSONRPC() error {
 	hub := &jsonRPCHub{
 		state:              s.state,

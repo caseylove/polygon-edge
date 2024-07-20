@@ -686,7 +686,7 @@ func ({{.Sig}} *{{.TName}}) Decode(input []byte) error {
 	return nil
 }
 
-// generateConstruct generates stubs for a smart contract constructor
+// generateConstructor generates stubs for a smart contract constructor
 func generateConstructor(generatedData *generatedData,
 	contractName string, constructor *abi.Method) error {
 	methodName := fmt.Sprintf(functionNameFormat, strings.Title(contractName+"Constructor"))

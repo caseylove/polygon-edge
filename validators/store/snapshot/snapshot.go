@@ -451,7 +451,7 @@ func (s *SnapshotValidatorStore) getNextCandidate(
 	return s.pickOneCandidate(snap, proposer)
 }
 
-// cleanObsolateCandidates removes useless candidates from candidates field
+// cleanObsoleteCandidates removes useless candidates from candidates field
 // Unsafe against concurrent accesses
 func (s *SnapshotValidatorStore) cleanObsoleteCandidates(set validators.Validators) {
 	newCandidates := make([]*store.Candidate, 0, len(s.candidates))

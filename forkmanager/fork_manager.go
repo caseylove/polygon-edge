@@ -22,7 +22,7 @@ type forkManager struct {
 	handlerIDCnt uint
 }
 
-// GeInstance returns fork manager singleton instance. Thread safe
+// GetInstance returns fork manager singleton instance. Thread safe
 func GetInstance() *forkManager {
 	forkManagerInstanceLock.Lock()
 	defer forkManagerInstanceLock.Unlock()
